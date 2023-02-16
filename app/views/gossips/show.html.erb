@@ -23,4 +23,11 @@
 
 
   <a href="<%= gossips_path %>" class "btn btn-primary">Retourner à la liste des gossips</a>
+  <br>
+  <br>
+  <br>
+  <p>###################################   Section Commentaires   ###################################</p>
 
+  <p> Les commentaires de la population déchainée :</p> 
+  <%= render @gossip.comments %> <%#, va chercher le comment et renvoi vers le _comment.html.erb %>
+  <%= render partial: 'comments/form', locals: { gossip: @gossip } %>

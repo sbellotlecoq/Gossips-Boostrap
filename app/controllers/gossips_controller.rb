@@ -50,10 +50,6 @@ class GossipsController < ApplicationController
       @gossip.destroy
       redirect_to gossips_path
     end
-    
+
   end
 
-
-  # t.string "title"
-  # t.text "content"
-  # t.bigint "user_id"
